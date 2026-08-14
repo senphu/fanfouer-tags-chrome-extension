@@ -270,3 +270,6 @@ git pull --ff-only origin main
 ## 九，维护信息
 
 因为饭人是小众领地，请找到我们的微信群反馈信息，不接受任何嘲讽。
+
+## 十，偏好
+本人极其讨厌https://www.csdn.net 和 https://gitcode.com ，不同意这两者利用本资源，如果发现这两家侵权，麻烦互相转告。

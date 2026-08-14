@@ -1,0 +1,164 @@
+:root {
+  color: #243447;
+  background: #f4f8fb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 520px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.page-shell {
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 64px 24px;
+}
+
+.settings-card {
+  width: min(680px, 100%);
+  padding: 34px 38px 32px;
+  border: 1px solid #d9e2ec;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 14px 40px rgba(34, 56, 78, 0.1);
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  color: #2680c2;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+h1 {
+  margin: 0;
+  color: #102a43;
+  font-size: 28px;
+  line-height: 1.25;
+}
+
+.description {
+  max-width: 570px;
+  margin: 12px 0 26px;
+  color: #627d98;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.author {
+  margin: -14px 0 24px;
+  color: #829ab1;
+  font-size: 12px;
+}
+
+.author a {
+  color: #2680c2;
+  text-decoration: none;
+}
+
+.author a:hover {
+  text-decoration: underline;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.summary-item {
+  padding: 15px 16px;
+  border: 1px solid #e1eaf1;
+  border-radius: 10px;
+  background: #f8fbfd;
+}
+
+.summary-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #627d98;
+  font-size: 12px;
+}
+
+.summary-item strong {
+  color: #145b85;
+  font-size: 24px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.primary-button {
+  border: 1px solid #1976b8;
+  background: #1976b8;
+  color: #ffffff;
+}
+
+.primary-button:hover {
+  background: #145b85;
+}
+
+.secondary-button {
+  border: 1px solid #bcccdc;
+  background: #ffffff;
+  color: #486581;
+}
+
+.secondary-button:hover {
+  border-color: #7b98b2;
+  background: #f5f9fc;
+}
+
+.hint {
+  margin: 18px 0 0;
+  color: #829ab1;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.status {
+  min-height: 20px;
+  margin: 12px 0 0;
+  color: #2f855a;
+  font-size: 13px;
+}
+
+.status.error {
+  color: #b42318;
+}
+
+@media (max-width: 580px) {
+  body {
+    min-width: 0;
+  }
+
+  .page-shell {
+    padding: 24px 14px;
+  }
+
+  .settings-card {
+    padding: 26px 22px 24px;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "饭人画像谷歌插件",
+  "version": "1.0.0",
+  "description": "在 m.fanfou.com 用户页面查看和维护个人标签。",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "饭人画像谷歌插件"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://m.fanfou.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

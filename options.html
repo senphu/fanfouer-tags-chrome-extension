@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饭人画像谷歌插件设置</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="settings-card" aria-labelledby="page-title">
+        <div class="eyebrow">FANFOU USER TAGS</div>
+        <h1 id="page-title">饭人画像谷歌插件设置</h1>
+        <p class="description">
+          保护隐私，你的标签数据不会上云，请自行定期备份。在这里备份或恢复全部用户标签。
+          <br />页面上的用户链接悬浮卡片只负责查看和编辑当前用户标签。
+        </p>
+        <p class="author">作者：肥魔 · <a href="mailto:serylab+fanfouer+tags@gmail.com">serylab+fanfouer+tags@gmail.com</a></p>
+
+        <div class="summary" aria-live="polite">
+          <div class="summary-item">
+            <span class="summary-label">已保存用户</span>
+            <strong class="user-count">-</strong>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">已保存标签</span>
+            <strong class="tag-count">-</strong>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="button primary-button export-button" type="button">导出全部标签</button>
+          <button class="button secondary-button import-button" type="button">导入标签文件</button>
+          <input class="import-input" type="file" accept="application/json,.json" hidden>
+        </div>
+
+        <p class="hint">导入采用合并策略：相同用户的标签会自动合并并去重，不会覆盖已有数据。</p>
+        <p class="status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
